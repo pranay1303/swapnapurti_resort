@@ -1,0 +1,167 @@
+
+.package-section {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(to bottom right, #f1f8e9, #e0f2f1);
+  padding: 3rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Hide scrollbar - cross-browser */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.package-section::-webkit-scrollbar {
+  display: none;
+}
+
+.package-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #2e7d32;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Card Styling */
+.package-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.package-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.package-details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex-grow: 1;
+}
+
+.package-details h3 {
+  font-size: 1.6rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.package-desc {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.package-amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.4rem 1rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.package-price {
+  font-size: 1.1rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 0.6rem;
+}
+
+.discounted-price {
+  color: #00796b;
+  font-weight: bold;
+}
+
+.package-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 120px;
+}
+
+.book-btn {
+  background-color: #00796b;
+  color: white;
+  border: none;
+}
+.book-btn:hover {
+  background-color: #004d40;
+}
+
+.enquiry-btn {
+  background: transparent;
+  color: #00796b;
+  border: 2px solid #00796b;
+}
+.enquiry-btn:hover {
+  background-color: #e0f2f1;
+  color: #004d40;
+  border-color: #004d40;
+}
+
+/* 💻 Desktop view enhancements */
+@media (min-width: 768px) {
+  .package-heading {
+    font-size: 2.8rem;
+  }
+
+  .package-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .package-details h3 {
+    font-size: 1.8rem;
+  }
+
+  .package-amenities-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .package-price {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+  }
+} 
