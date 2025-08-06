@@ -1,0 +1,90 @@
+/* ==== App-Level Styles ==== */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Section default spacing */
+section {
+  width: 100%;
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Headings inside sections */
+section h1,
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Section paragraph text */
+section p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Bottom spacing globally */
+body {
+  padding-bottom: 60px;
+}
+
+/* ===== Responsive Typography and Padding ===== */
+@media (max-width: 1024px) {
+  section {
+    padding: 70px 4%;
+  }
+
+  section h1,
+  section h2 {
+    font-size: 2.2rem;
+  }
+
+  section p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 3%;
+  }
+
+  section h1,
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 50px 5%;
+  }
+
+  section h1,
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
