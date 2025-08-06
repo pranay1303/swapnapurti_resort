@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
   width: 100%;
+<<<<<<< HEAD
   overflow-x: hidden; /* Only hide horizontal scrolling */
   font-family: 'Segoe UI', sans-serif;
   -ms-overflow-style: none;     /* Hide scrollbar in IE/Edge */
@@ -15,6 +16,10 @@ html, body {
 
 body::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
+=======
+  overflow  : hidden; /* ✅ fixed: only hide horizontal scroll */
+  font-family: 'Segoe UI', sans-serif;
+>>>>>>> 7ada6c64a796a406fb05c3067c46d134a4b6f5b0
 }
 
 a {
